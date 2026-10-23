@@ -1,0 +1,165 @@
+{
+  "clean_fixture": {
+    "allowed_kinds": [],
+    "exit": 0,
+    "findings": [],
+    "suppressed": []
+  },
+  "fp_traps": {
+    "allowed_kinds": [
+      "aws_access_key",
+      "credit_card",
+      "credit_card",
+      "email",
+      "stripe_key"
+    ],
+    "exit": 0,
+    "findings": [],
+    "suppressed": []
+  },
+  "pem_block": {
+    "allowed_kinds": [],
+    "exit": 2,
+    "findings": [
+      [
+        "PAT-PRIVATE-KEY",
+        "private_key",
+        "critical",
+        "helios/key.pem",
+        1
+      ]
+    ],
+    "suppressed": []
+  },
+  "rename_and_newfile": {
+    "allowed_kinds": [],
+    "exit": 2,
+    "findings": [
+      [
+        "PAT-AWS-KEY",
+        "aws_access_key",
+        "critical",
+        "helios/new_cfg.py",
+        3
+      ],
+      [
+        "PAT-EMAIL",
+        "email",
+        "low",
+        "helios/notes.txt",
+        1
+      ]
+    ],
+    "suppressed": []
+  },
+  "staged_secrets": {
+    "allowed_kinds": [],
+    "exit": 2,
+    "findings": [
+      [
+        "PAT-AWS-KEY",
+        "aws_access_key",
+        "critical",
+        "helios/config.py",
+        7
+      ],
+      [
+        "PAT-GITHUB-TOKEN",
+        "github_token",
+        "critical",
+        "helios/config.py",
+        8
+      ],
+      [
+        "PAT-STRIPE-KEY",
+        "stripe_key",
+        "critical",
+        "helios/config.py",
+        9
+      ],
+      [
+        "PAT-JWT",
+        "jwt",
+        "high",
+        "helios/config.py",
+        10
+      ],
+      [
+        "PAT-CARD",
+        "credit_card",
+        "high",
+        "helios/config.py",
+        11
+      ],
+      [
+        "PAT-SSN",
+        "ssn",
+        "high",
+        "helios/config.py",
+        12
+      ],
+      [
+        "PAT-GENERIC-SECRET",
+        "generic_secret",
+        "high",
+        "helios/config.py",
+        13
+      ],
+      [
+        "PAT-EMAIL",
+        "email",
+        "low",
+        "helios/contact.py",
+        2
+      ],
+      [
+        "PAT-PHONE",
+        "phone",
+        "low",
+        "helios/contact.py",
+        3
+      ]
+    ],
+    "suppressed": []
+  },
+  "suppression": {
+    "allowed_kinds": [],
+    "exit": 2,
+    "findings": [
+      [
+        "PAT-STRIPE-KEY",
+        "stripe_key",
+        "critical",
+        "helios/fixtures.py",
+        2
+      ]
+    ],
+    "suppressed": [
+      [
+        "aws_access_key",
+        1
+      ]
+    ]
+  },
+  "warnings_fixture": {
+    "allowed_kinds": [],
+    "exit": 1,
+    "findings": [
+      [
+        "PAT-EMAIL",
+        "email",
+        "low",
+        "helios/contact.py",
+        4
+      ],
+      [
+        "PAT-PHONE",
+        "phone",
+        "low",
+        "helios/contact.py",
+        5
+      ]
+    ],
+    "suppressed": []
+  }
+}
