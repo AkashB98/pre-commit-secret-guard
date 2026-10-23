@@ -1,0 +1,27 @@
+{
+  "all_pass": true,
+  "cases": {
+    "clean_fixture": {
+      "pass": true
+    },
+    "fp_traps": {
+      "pass": true
+    },
+    "pem_block": {
+      "pass": true
+    },
+    "rename_and_newfile": {
+      "pass": true
+    },
+    "staged_secrets": {
+      "pass": true
+    },
+    "suppression": {
+      "pass": true
+    },
+    "warnings_fixture": {
+      "pass": true
+    }
+  },
+  "n_cases": 7
+}
