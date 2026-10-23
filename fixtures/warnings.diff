@@ -1,0 +1,7 @@
+diff --git a/helios/contact.py b/helios/contact.py
+--- a/helios/contact.py
++++ b/helios/contact.py
+@@ -3,2 +3,4 @@ CONTACTS = {}
+ CONTACTS["hq"] = "Dallas"
++CONTACTS["support"] = "support@helioshome.test"
++CONTACTS["phone"] = "(214) 555-0182"
